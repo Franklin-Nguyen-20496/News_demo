@@ -1,0 +1,22 @@
+{
+  "name": "news_demo",
+  "version": "1.0.0",
+  "description": "Get data in URL and render on my Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franklin-Nguyen-20496/News_demo.git"
+  },
+  "author": "Hoang oc cho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franklin-Nguyen-20496/News_demo/issues"
+  },
+  "homepage": "https://github.com/Franklin-Nguyen-20496/News_demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
