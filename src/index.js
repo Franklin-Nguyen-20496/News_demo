@@ -1,12 +1,12 @@
 const path = require('path');
 const express = require('express');
-var exphbs  = require('express-handlebars');
+const exphbs  = require('express-handlebars');
 const app = express();
 const port = 3000;
-var morgan = require('morgan');
+const morgan = require('morgan');
 
 // add morgan lib for dev project
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 // Set handlebars -template engine
 app.engine('.hbs', exphbs({
@@ -14,6 +14,9 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, '/resources/views'));
+
+// Use static file
+app.use(express.static(path.join(__dirname, 'public')));
 
 // routingggg
 app.get('/', function (req, res) {
