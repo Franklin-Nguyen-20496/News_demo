@@ -4,6 +4,7 @@
   "description": "Get data in URL and render on my Web",
   "main": "index.js",
   "scripts": {
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "start": "nodemon --inspect ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
