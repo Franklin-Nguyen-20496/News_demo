@@ -1,6 +1,6 @@
 
 examples_package.json
 nodemon.json
-/src/public/vendor/open-iconic-master/
+src/public/vendor/open-iconic-master/
 package-lock.json
 node_modules
