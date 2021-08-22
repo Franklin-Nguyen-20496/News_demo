@@ -1,6 +1,19 @@
 :root {
   background-color: #212529 !important;
-  color: #f8f9fa !important; }
+  color: #f8f9fa !important;
+  font-weight: light; }
 
 h1 {
   color: green; }
+
+.header__item {
+  list-style-type: none; }
+
+.header__item > li > a {
+  text-decoration: none; }
+
+.header {
+  display: flex; }
+
+.header > ul {
+  padding: 0px; }

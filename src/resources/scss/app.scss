@@ -3,8 +3,25 @@
 :root {
     background-color: $dark-color !important;
     color: $light-color !important;
+    font-weight: light;
 }
 
 h1 {
     color: $green-color;
+}
+
+.header__item {
+    list-style-type: none;
+}
+
+.header__item >li > a {
+   text-decoration: none;
+}
+
+.header {
+    display: flex;
+}
+
+.header >ul {
+    padding: 0px;
 }
