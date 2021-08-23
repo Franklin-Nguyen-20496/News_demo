@@ -10,7 +10,8 @@ h1 {
   list-style-type: none; }
 
 .header__item > li > a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: light; }
 
 .header {
   display: flex; }

@@ -16,7 +16,8 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, '/resources/views'));
 
 // Use static file
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + '/public')));
+// console.log('PATH', path.join(__dirname + '/public'));
 
 // routingggg
 app.get('/', function (req, res) {
