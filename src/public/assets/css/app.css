@@ -1,33 +1,57 @@
 :root {
   background-color: #212529;
   color: #f8f9fa;
-  font-weight: light; }
+  font-weight: light;
+  font-size: 14px; }
 
 h1 {
-  color: green; }
+  color: #f8f9fa; }
 
 #header {
-  width: 100%;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff; }
+  width: 100%; }
+
+.header__show {
+  border-bottom: 1px solid #fff;
+  height: 50px; }
+
+.show__container {
+  position: relative; }
+
+.show__container .btn-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000; }
+
+.show__container .btn-nav a {
+  line-height: 50px;
+  padding: 0 8px;
+  font-size: 28px; }
+
+.show__container div:hover span {
+  cursor: pointer;
+  color: tomato; }
 
 .header__item li a {
   text-decoration: none;
   font-weight: light;
   color: #212529;
-  padding: 0 8px;
+  margin: 0 8px;
   font-weight: 400;
   width: 100%; }
 
 .header__item div a {
   margin: 0 12px;
   padding: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  line-height: 24px;
+  color: #f8f9fa; }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
 
 .header > ul {
   padding: 0px;
@@ -41,21 +65,69 @@ h1 {
   line-height: 50px; }
 
 .header__item span {
-  margin-top: 14px; }
+  margin: 14px 0 8px 8px; }
 
 .header__item > div {
   display: none;
   position: absolute;
   width: auto;
-  min-width: 200px;
-  z-index: 100; }
+  min-width: 180px;
+  z-index: 100;
+  border: 1px solid #f8f9fa; }
 
 .header__item:hover > div {
   display: block;
-  background-color: #f8f9fa; }
+  background-color: #212529; }
 
 .header__item a:hover {
   color: tomato !important;
-  border-bottom: 1px solid #212529;
+  border-bottom: 1px solid tomato;
   opacity: 1;
   width: 100%; }
+
+.header__hide {
+  border: 1px solid #f8f9fa;
+  border-top: none; }
+
+.header__hide a {
+  color: #f8f9fa; }
+
+.header__hide .header__title {
+  display: flex;
+  border-bottom: 1px solid #f8f9fa; }
+
+.header__title h1:first-child {
+  flex: 1; }
+
+.header__title h1 {
+  line-height: 50px;
+  margin: 0;
+  background-color: none;
+  border: none; }
+
+.header__title h1 a:hover {
+  color: tomato; }
+
+.fade__item.header__item > div {
+  display: block;
+  position: relative;
+  background-color: #212529;
+  border: none; }
+
+.fade__item.header__item > div a {
+  color: #f8f9fa;
+  margin: 0 8px; }
+
+.fade__item.header__item > li a {
+  color: tomato; }
+
+.random__navbar {
+  border-left: 1px solid #f8f9fa;
+  z-index: 100; }
+
+.button__hide {
+  border-bottom: 1px solid #f8f9fa;
+  opacity: 0.6; }
+
+.button__hide:hover {
+  cursor: pointer; }
