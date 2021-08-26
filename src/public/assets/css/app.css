@@ -4,7 +4,7 @@
   font-weight: light;
   font-size: 14px; }
 
-h1 {
+h1, h2, h3, h4, h5, h6, p, a {
   color: #f8f9fa; }
 
 #header {
@@ -131,3 +131,11 @@ h1 {
 
 .button__hide:hover {
   cursor: pointer; }
+
+img {
+  width: 220px;
+  height: 132px;
+  float: right; }
+
+.news__item {
+  position: relative; }

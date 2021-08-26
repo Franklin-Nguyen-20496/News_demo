@@ -7,7 +7,7 @@
     font-size: 14px;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6,p,a {
     color: $light-color;
 }
 
@@ -165,4 +165,16 @@ h1 {
 
 .button__hide:hover {
     cursor: pointer;
+}
+
+// Handlebars 
+
+img {
+    width: 220px;
+    height: 132px;
+    float: right;
+}
+
+.news__item {
+    position: relative;
 }
